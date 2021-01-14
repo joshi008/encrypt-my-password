@@ -13,24 +13,40 @@
 </head>
 
 <body>
-    <div class="container outter">
-        <h2>Encrypt the Password</h2>
-        <input type="text" id="password" placeholder="password">
-        <input type="text" id="key1" placeholder="key">
-
+    <div class="container">
+        <h3>Advance Encryption Standard (AES): A symmetric block cipher chosen by the U.S. government to protect
+            classified information. AES is implemented in software and hardware throughout the world to encrypt
+            sensitive data. It is essential for government computer security, cybersecurity and electronic data
+            protection.</h3>
         <br>
 
-        <button onclick="encrypt()">Encrypt</button>
-        <div class="result1"></div>
+        <div class="outer">
+            <h2>Encrypt the Password</h2>
+            <input type="text" id="password" placeholder="password">
+            <input type="text" id="key1" placeholder="key">
 
-        <h2>Decrypt the Password</h2>
-        <input type="text" id="password2" placeholder="password">
-        <input type="text" id="key2" placeholder="key">
+            <br>
+            <br>
 
-        <br>
+            <button onclick="encrypt()">Encrypt</button>
+            <div class="result1" id="result1"></div>
 
-        <button onclick="decrypt()">Decrypt</button>
-        <div class="result1"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h2>Decrypt the Password</h2>
+            <input type="text" id="password2" placeholder="password">
+            <input type="text" id="key2" placeholder="key">
+
+            <br>
+            <br>
+
+            <button onclick="decrypt()">Decrypt</button>
+            <div class="result2" id="result2"></div>
+            <br>
+        </div>
     </div>
     <script src="assets/app.js"></script>
 </body>
